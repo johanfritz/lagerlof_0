@@ -1,6 +1,4 @@
 # lagerlof_0 
 is a character-level language model based on the novel *Nils Holgerssons underbara resa genom Sverige* (eng: *The wonderful adventures of Nils*).
-## Bigram model
-The *bigram.py* file "trains" a bigram model by simply conting all the occuring bigrams in the novel. The loss (NLL) over the entire corpus is about 5.9.
-## One layer feedforward neural network
-The ambition with this one is to achieve similar performance as with the bigram model, but instead taking a deep learning approach. Because of the nature of a one layer model, the loss is expected to be similar to the bigram model. 
+## n_gram models
+The repo contains functions and classes to generate a n_gram model for a given corpus. The *parse* class is used to, as the name suggests, parse the dataset. It takes only a filename at construction. The functions in the file *n_gram.py* are used to count the occurances of each n_gram in the corpus. In the *simple.py* file, there is a *generate()* method that can be used to generate text according to a model specified in the same file. It is preferabbly used in an interactive environment, at the momement. The *simple.py* file can be consulted for details on this.
